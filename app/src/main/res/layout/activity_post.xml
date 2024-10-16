@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/parentlayout"
+    android:layoutDirection="rtl"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
+                >
+
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="عنوان"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_marginTop="6sp"
+                    />
+
+                <EditText
+                    android:id="@+id/adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="آدرس"
+                    android:layout_marginTop="20dp"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:background="@null"
+                    />
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_marginTop="6sp"
+                    />
+
+                <EditText
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="جزییات"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:background="@null"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_marginTop="6sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/province_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layoutDirection="ltr"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_marginTop="6sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/category_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layoutDirection="ltr"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_marginTop="6sp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/arealayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="مساحت"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"
+                        android:layout_marginTop="6sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edit_post_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/pick_image"
+                    android:layout_width="0dp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/gallery"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="2dp"
+                    />
+
+                    <ImageView
+                        android:id="@+id/_image"
+                        android:layout_width="0dp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/gallery"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="2dp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/img_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="عکسی انتخاب نشده !"
+                    android:textColor="@color/red"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="ثبت"
+                    app:roundedCorners="true"
+                    app:bootstrapBrand="success"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

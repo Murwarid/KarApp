@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeUserInfo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            >
+
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="primary"
+            app:roundedCorners="true"
+            android:text="اسم"
+            android:layout_marginTop="10dp"
+            />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/edit_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="primary"
+                app:roundedCorners="true"
+                android:text="تخلص"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="primary"
+                app:roundedCorners="true"
+                android:text="شماره تماس"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/edit_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="primary"
+                app:roundedCorners="true"
+                android:text="عنوان وظیفه"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/edit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="success"
+                android:text="ویرایش"
+                app:roundedCorners="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#878181"
+            android:layout_marginTop="25dp"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/changePasword_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="warning"
+            android:text="تغیر رمز عبور"
+            app:roundedCorners="true"
+            android:layout_marginTop="15dp"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="danger"
+            android:text="حذف حساب کاربری"
+            app:roundedCorners="true"
+            android:layout_marginTop="15dp"
+            />
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.Register"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            app:roundedCorners="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="اسم"
+            android:paddingRight="30dp"
+            android:paddingEnd="30dp"
+            android:text="احمد"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:bootstrapSize="md"
+        app:bootstrapBrand="info"
+        app:roundedCorners="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="تخلص"
+        android:paddingRight="30dp"
+        android:paddingEnd="30dp"
+            android:text="احمدی"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            app:roundedCorners="true"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="شماره تلفون"
+            android:paddingRight="30dp"
+            android:text="0777060183"
+            android:paddingEnd="30dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            app:roundedCorners="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="شغل"
+            android:text="آشپز"
+            android:paddingRight="30dp"
+            android:paddingEnd="30dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            app:roundedCorners="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="رمز عبور"
+            android:text="1234"
+            android:inputType="textPassword"
+            android:paddingRight="30dp"
+            android:paddingEnd="30dp" />
+
+        <Spinner
+            android:id="@+id/chooseprovince"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/chooseimg"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pick"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/image_name"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_marginTop="35dp"
+                android:text="تصویر پروفایل"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="رجستر"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:bootstrapBrand="success"
+            app:roundedCorners="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="30sp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+         >
+        <View
+
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:background="#878181"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1.4"
+            />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ویا"
+                android:paddingRight="5dp"
+                android:layout_weight="0.2"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:background="#878181"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1.4"
+                />
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" حساب دارید؟ ورود"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20sp"
+            android:gravity="center_horizontal" />
+</LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

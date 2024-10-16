@@ -1,0 +1,68 @@
+[versions]
+agp = "8.6.1"
+androidbootstrap = "2.3.2"
+androidSpinkit = "1.4.0"
+annotation = "1.8.2"
+appcompatVersion = "1.0.0"
+butterknife = "10.0.0"
+butterknifeCompiler = "10.2.3"
+butterknifeVersion = "10.2.3"
+calligraphy3 = "3.1.1"
+circleimageview = "3.0.1"
+constraintlayout = "2.1.4"
+dexter = "5.0.0"
+expandableCardview = "0.8"
+glide = "4.7.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+library = "1.4.0"
+lifecycleExtensions = "2.0.0"
+material = "1.12.0"
+materialVersion = "1.0.0"
+multidex = "2.0.1"
+navigationFragment = "2.3.0"
+navigationUi = "2.3.0"
+rxAndroidNetworking = "1.0.4"
+ucrop = "2.2.2"
+vectordrawable = "1.0.1"
+viewpump = "2.0.3"
+
+[libraries]
+android-networking = { module = "com.github.amitshekhariitbhu.Fast-Android-Networking:android-networking", version.ref = "rxAndroidNetworking" }
+android-spinkit = { module = "com.github.ybq:Android-SpinKit", version.ref = "androidSpinkit" }
+androidbootstrap = { module = "com.beardedhen:androidbootstrap", version.ref = "androidbootstrap" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+androidx-appcompat-v100 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigationUi" }
+annotations = { module = "com.github.bumptech.glide:annotations", version.ref = "glide" }
+butterknife = { module = "com.jakewharton:butterknife", version.ref = "butterknife" }
+butterknife-compiler = { module = "com.jakewharton:butterknife-compiler", version.ref = "butterknife" }
+butterknife-compiler-v1023 = { module = "com.jakewharton:butterknife-compiler", version.ref = "butterknifeCompiler" }
+butterknife-v1023 = { module = "com.jakewharton:butterknife", version.ref = "butterknifeVersion" }
+calligraphy3 = { module = "io.github.inflationx:calligraphy3", version.ref = "calligraphy3" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+dexter = { module = "com.karumi:dexter", version.ref = "dexter" }
+expandable-cardview = { module = "com.alespero:expandable-cardview", version.ref = "expandableCardview" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+library = { module = "me.zhanghai.android.materialratingbar:library", version.ref = "library" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material-v100 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigationFragment" }
+rx-android-networking = { module = "com.github.amitshekhariitbhu.Fast-Android-Networking:rx-android-networking", version.ref = "rxAndroidNetworking" }
+ucrop = { module = "com.github.yalantis:ucrop", version.ref = "ucrop" }
+vectordrawable = { module = "androidx.vectordrawable:vectordrawable", version.ref = "vectordrawable" }
+viewpump = { module = "io.github.inflationx:viewpump", version.ref = "viewpump" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

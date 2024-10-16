@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    >
+
+    <LinearLayout
+        android:id="@+id/emp_layout"
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|left"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/emp_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_red_24dp"
+
+            />
+        <TextView
+            android:text="اطلاعات دریافت نشد"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emp_text"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connectionerror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgrefresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/refresh1"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عدم اتصال به سرور لطفا دوباره کوشش کنید!"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تلاس دوباره"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/fcnerror"
+        android:layout_marginStart="20dp"
+        >
+
+
+        <ListView
+            android:id="@+id/exlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="vertical"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

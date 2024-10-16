@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">KarAppAndroid</string>
+    <string name="title_home">خانه</string>
+    <string name="title_dashboard">علاقمند</string>
+    <string name="title_notifications">پروفایل</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">نامعتبر</string>
+    <string name="invalid_password">پسورد باید بیشتر از ۵ کرکتر باشد</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string-array name="skill">
+        <item>high</item>
+        <item>midum</item>
+        <item>low</item>
+    </string-array>
+
+
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <!--    card-->
+    <string name="supporting">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</string>
+    <string name="title">Title</string>
+    <string name="subhead">Subhead</string>
+    <string name="primary">Title goes here</string>
+    <string name="primary_short">Title here</string>
+    <string name="subtext">Subtitle here</string>
+    <string name="action_1">Action 1</string>
+    <string name="action_2">Action 2</string>
+    <string name="expanded_supporting">I\'m a thing. But, like most politicians, he promised more than he could deliver. You won\'t have time for sleeping, soldier, not with all the bed making you\'ll be doing. Then we\'ll go with that data file! Hey, you add a one and two zeros to that or we walk! You\'re going to do his laundry? I\'ve got to find a way to escape.</string>
+    <string name="title_activity_post">Post</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_experiences">Experiences</string>
+    <string name="title_activity_skill">Skill</string>
+
+
+</resources>

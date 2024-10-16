@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:minHeight="200dp"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:gravity="center">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progress"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+<!--        <ProgressBar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/progress"-->
+<!--            android:layout_gravity="center"-->
+<!--            />-->
+
+<!--        <com.github.ybq.android.spinkit.SpinKitView-->
+<!--            android:id="@+id/spin_kit"-->
+<!--            style="@style/SpinKitView.Circle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:SpinKit_Color="@color/colorPrimaryDark" />-->
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progress"
+            android:gravity="center"
+            android:layout_marginBottom="-40dp"
+             />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

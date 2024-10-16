@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="ثبت مهارت"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingTop="7dp"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bootstrap_brand_secondary_border"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                app:roundedCorners="true"
+                app:bootstrapBrand="info"
+                android:hint="عنوان"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapDropDown
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="primary"
+                app:bootstrapExpandDirection="down"
+                app:bootstrapSize="md"
+                app:bootstrapText="سطح مهارت "
+                app:roundedCorners="true"
+                android:layout_marginTop="15dp"
+                app:dropdownResource="@array/skill"
+                android:id="@+id/spin2"
+                android:layout_weight="1"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            >
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ثبت"
+                app:bootstrapBrand="success"
+                app:roundedCorners="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:layout_weight="1"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

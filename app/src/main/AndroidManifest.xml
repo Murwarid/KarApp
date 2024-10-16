@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".tools.DemoActivity"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+    <activity android:name=".PostByFavorite" />
+    <activity android:name=".OtherUserProfilePost" />
+
+        <activity
+            android:name=".ui.OtherUserProfile"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".ChangeUserInfo" />
+        <activity android:name=".UserPosts" />
+        <activity
+            android:name=".Skill"
+            android:label="@string/title_activity_skill"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Experiences"
+            android:label="@string/title_activity_experiences"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SearchResult" />
+        <activity android:name=".SearchPosts" />
+        <activity android:name=".auth.Change_Password" />
+        <activity
+            android:name=".SinglePost"
+            android:theme="@style/transparentactionbar" />
+        <activity android:name=".Post" />
+        <activity android:name=".auth.Register"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".ProvinceList" />
+        <activity android:name=".PostsByProvinceAndCategory" />
+        <activity android:name=".CategoryList" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".auth.ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ImagePickerActivity" /> <!-- uCrop cropping activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+    </manifest>
